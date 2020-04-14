@@ -1,0 +1,15 @@
+@import "font-awesome";
+
+
+@font-face {
+ font-family: 'fa-brands';
+ src: url(asset-path("assets/webfonts/fa-brands-400")) format("woff2"),
+     url(asset-path("assets/webfonts/fa-brands-400")) format("woff"),
+     url(asset-path("assets/webfonts/fa-regular-400")) format("woff2"),
+     url(asset-path("assets/webfonts/fa-regular-400")) format("woff"),
+     url(asset-path("assets/webfonts/fa-regular-400.ttf")) format("truetype"),
+     url(asset-path("assets/webfonts/fa-brands-400.ttf")) format("truetype"),
+     url(asset-path("assets/webfonts/fa-solid-900")) format("woff2"),
+     url(asset-path("assets/webfonts/fa-solid-900")) format("woff"),
+     url(asset-path("assets/webfonts/fa-solid-900.ttf")) format("truetype"),      
+}

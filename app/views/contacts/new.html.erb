@@ -1,0 +1,209 @@
+<section id="slider" class="no-padding">
+   <div id="rev_slider_28_1_wrapper" class="rev_slider_wrapper fullScreen fullscreen-container" data-alias="parallax-zoom-slices" data-source="gallery" style="background:#000000;padding:0px;">
+      <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+      <section class="p-b-10" style= "padding-top: 5%;"data-parallax-image="/assets/Cont3.jpg">
+         <div class="container-fluid  text-light">
+            <div class="py-5 pl-3">
+               <h1 class="text-uppercase text-medium">Contact Us</h1>
+               <span>Work is easy when you have all tools around you!</span>   
+            </div>
+         </div>
+      </section>
+   </div>
+   <!-- END REVOLUTION SLIDER -->
+   <script type="text/javascript">
+      var tpj = jQuery;
+      
+      var revapi28;
+      tpj(document).ready(function() {
+          if (tpj("#rev_slider_28_1").revolution == undefined) {
+              revslider_showDoubleJqueryError("#rev_slider_28_1");
+          } else {
+              revapi28 = tpj("#rev_slider_28_1").show().revolution({
+                  sliderType: "standard",
+                  jsFileLocation: "include/rs-plugin/js/",
+                  sliderLayout: "fullscreen",
+                  dottedOverlay: "none",
+                  delay: 5500,
+                  navigation: {
+                      keyboardNavigation: "off",
+                      keyboard_direction: "horizontal",
+                      mouseScrollNavigation: "off",
+                      mouseScrollReverse: "default",
+                      onHoverStop: "off",
+                      arrows: {
+                          style: "uranus",
+                          enable: true,
+                          hide_onmobile: false,
+                          hide_onleave: false,
+                          tmp: '',
+                          left: {
+                              h_align: "left",
+                              v_align: "center",
+                              h_offset: 20,
+                              v_offset: 0
+                          },
+                          right: {
+                              h_align: "right",
+                              v_align: "center",
+                              h_offset: 20,
+                              v_offset: 0
+                          }
+                      },
+                      bullets: {
+                          enable: true,
+                          hide_onmobile: false,
+                          style: "hermes",
+                          hide_onleave: false,
+                          direction: "horizontal",
+                          h_align: "center",
+                          v_align: "bottom",
+                          h_offset: 0,
+                          v_offset: 20,
+                          space: 5,
+                          tmp: ''
+                      }
+                  },
+                  responsiveLevels: [1240, 1024, 778, 480],
+                  visibilityLevels: [1240, 1024, 778, 480],
+                  gridwidth: [1240, 1024, 778, 480],
+                  gridheight: [868, 768, 960, 720],
+                  lazyType: "none",
+                  shadow: 0,
+                  spinner: "off",
+                  stopLoop: "off",
+                  stopAfterLoops: -1,
+                  stopAtSlide: -1,
+                  shuffle: "off",
+                  autoHeight: "off",
+                  fullScreenAutoWidth: "off",
+                  fullScreenAlignForce: "off",
+                  fullScreenOffsetContainer: "",
+                  fullScreenOffset: "0px",
+                  hideThumbsOnMobile: "off",
+                  hideSliderAtLimit: 0,
+                  hideCaptionAtLimit: 0,
+                  hideAllCaptionAtLilmit: 0,
+                  debugMode: false,
+                  fallbacks: {
+                      simplifyAll: "off",
+                      nextSlideOnWindowFocus: "off",
+                      disableFocusListener: false,
+                  }
+              });
+          }
+      
+          if (revapi28) revapi28.revSliderSlicey();
+      }); /*ready*/
+   </script>
+</section>
+<section class="background-grey p-t-60 p-b-60">
+   <div class="container">
+      <div class="heading section-title">
+         <h2>Get in Touch</h2>
+         <p class="section-sub">We Are Ready to Help You 24/7</p>
+      </div>
+      <div class="row team-members team-members-circle">
+         <div class="col-lg-12">
+            <h3>Contact Us</h3>
+            <%= form_for @contact do |f| %>
+            <div class="form-row">
+               <div class="form-group col-md-6">
+                  <%= f.label :First_Name %>
+                  <%= f.text_field  :firstname, required: true,class: 'form-control', id: 'inputEmail4', placeholder: 'First Name'%>
+               </div>
+               <div class="form-group col-md-6">
+                  <%= f.label :Last_Name %>
+                  <%= f.text_field  :lastname, required: true,class: 'form-control', id: 'inputEmail4', placeholder: 'Last Name'%>
+               </div>
+            </div>
+            <div class="form-group">
+               <%= f.label :Contact_Number %>
+               <%= f.text_field  :phone_number, required: true, class: 'form-control', id: 'contact', placeholder: 'Contact'%>
+            </div>
+            <div class="form-group">
+               <%= f.label :Email_address, for: "exampleFormControlInput1" %>
+               <%= f.text_field  :email, required: true, class: 'form-control', id: 'exampleFormControlInput1', placeholder: 'Email'%>
+            </div>
+            <div class="form-group">
+               <%= f.label :Subject %>
+               <%= f.text_field  :subject, required: true, class: 'form-control', placeholder: 'Subject'%>
+            </div>
+            <div class="form-group pb-4">
+               <%= f.label :Message, for: "exampleFormControlTextarea1" %>
+               <%= f.text_area  :message, required: true, class: 'form-control', id: 'exampleFormControlTextarea1', placeholder: 'Please write here'%>
+            </div>
+            <!-- <input type="submit" name="submit" class="btn btn-rounded btn-reveal" value="Send Message"> -->
+            <button type="submit" name="submit" class="btn btn-rounded btn-reveal" >Send Message</button>
+            <% end %>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="section-testimonials" style="background-color:#efefef;">
+   <div class="container">
+      <div class="heading section-title">
+         <h2>Our Address</h2>
+         <p class="section-sub"></p>
+      </div>
+      <div class="carousel arrows-visibile testimonial testimonial-single" data-items="1" data-loop="true" data-autoplay="true" data-autoplay-timeout="3500" data-arrows="false">
+         <div class="testimonial-item" style="background-color:#f5f5f4; background-image: url('/assets/world-map-dark.png'); background-repeat: no-repeat;">
+            <h1>INDIA</h1>
+            <p><i class="fa fa-map-marker-alt"></i>   E-1/50 Arera Colony, Bhopal MP, 462016</p>
+            <span><i class="fa fa-phone"></i>   +916262441510 <br><i class="fa fa-phone"></i>   +91 7553591440</span>
+            <span><i class="far fa-envelope"></i>   <a href="mailto:info@technogiq.com">info@technogiq.com</a></span>
+         </div>
+         <div class="testimonial-item" style="background-color:#f5f5f4; background-image: url('/assets/world-map-dark.png'); background-repeat: no-repeat;">
+            <!--<img src="images/img/person_1.png" alt="">-->
+            <h1>USA</h1>
+            <p><i class="fa fa-map-marker-alt"></i>3053 W Walnut Hill Ln, LN 820, Irving, TX 75038, USA</p>
+            <span><i class="fa fa-phone"></i>   +13232875754</span>
+            <span><i class="far fa-envelope"></i>   <a href="mailto:info@technogiq.com">info@technogiq.com</a></span>
+         </div>
+         <div class="testimonial-item" style="background-color:#f5f5f4; background-image: url('/assets/world-map-dark.png'); background-repeat: no-repeat;">
+            <!--<img src="images/img/person_1.png" alt="">-->
+            <h1>EUROPE</h1>
+            <p><i class="fa fa-map-marker-alt"></i>   Fiumicino (RM), Italy, 00054</p>
+            <!--<span><i class="fa fa-phone"></i>   +916262441510</span>-->
+            <span><i class="far fa-envelope"></i>   <a href="mailto:info@technogiq.com">info@technogiq.com</a></span>
+         </div>
+         <div class="testimonial-item" style="background-color:#f5f5f4; background-image: url('/assets/world-map-dark.png'); background-repeat: no-repeat;">
+            <!--<img src="images/img/person_1.png" alt="">-->
+            <h1>INDIA(PUNE)</h1>
+            <p><i class="fa fa-map-marker-alt"></i>   701, Raviraj Ariana, old Mundhwa Road, Kharadi 411014</p>
+            <span><i class="fa fa-phone"></i>   +916262441510</span>
+            <span><i class="far fa-envelope"></i>   <a href="mailto:info@technogiq.com">info@technogiq.com</a></span>
+         </div>
+         <div class="testimonial-item" style="background-color:#f5f5f4; background-image: url('/assets/world-map-dark.png'); background-repeat: no-repeat;">
+            <!--<img src="images/img/person_1.png" alt="">-->
+            <h1>INDIA(INDORE)</h1>
+            <p><i class="fa fa-map-marker-alt"></i>   17A, Pearl computer Corporate House, Electronic Complex ( IT Park) , Sukhliya, 452010</p>
+            <span><i class="fa fa-phone"></i>   +916262441510</span>
+            <span><i class="far fa-envelope"></i>   <a href="mailto:info@mitrainfolabs.com">info@technogiq.com</a></span>
+         </div>
+      </div>
+   </div>
+</section>
+<div class="mapouter">
+   <div class="gmap_canvas">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrfH6q2SYyzsR7pA8NtIwyeM&key=AIzaSyATSkVhDPuNUPRL0tPfy2QrHkB3FR1MULc" allowfullscreen></iframe>
+   </div>
+   <style>
+      .mapouter{position:relative;text-align:right;height:400px;width:100%;}
+      .gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}
+   </style>
+</div>
+</div>
+<!-- end: Wrapper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+<!-- Go to top button -->
+<a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
+<!--Plugins-->
+<script src="/assets/plugins.js"></script> 
+<!--Template functions-->
+<script src="/assets/functions.js"></script>
+<!-- Start of technogiq Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3b4e8d6a-8222-4d1e-a5a2-1a5cc3661002"></script>
+<!-- End of technogiq Zendesk Widget script -->
+<script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
